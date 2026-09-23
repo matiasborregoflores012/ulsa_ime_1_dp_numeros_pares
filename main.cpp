@@ -7,11 +7,22 @@
 // ¿por qué debe existir la función main()?
 int main() {
     // 1. Constante: cantidad de números a leer
-    const int CANTIDAD = 5;
+   const int CANTIDAD = 5;
 
-    // 2. Arreglo y contador (siempre inicializados)
+
+   int pares[CANTIDAD]; 
+   int totalPares = 0;
+
+
+   
+ 
     //    TODO: declara el arreglo pares. ¿De qué tamaño en el peor caso?
+
+
     //    TODO: declara totalPares. ¿Con qué valor empieza?
+
+
+
 
     std::cout << "Guardar los numeros pares de " << CANTIDAD << " numeros\n";
 
