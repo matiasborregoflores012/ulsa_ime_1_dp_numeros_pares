@@ -1,59 +1,35 @@
-// ¿Recuerdas qué hace iostream?
+
 #include <iostream>
 
-// ¿Por qué este include usa comillas y no < >?
+
 #include "utilerias.h"
 
-// ¿por qué debe existir la función main()?
+
 int main() {
-    // 1. Constante: cantidad de números a leer
-   const int CANTIDAD = 5;
-
-
-   int pares[CANTIDAD]; 
-   int totalPares = 0;
-   int numero;
-
-
-
-   
-
-    // 3. Ciclo: leer CANTIDAD números
-
-
-    for(int i = 0; i < CANTIDAD; i++)
     
-     std::cout << "Escribe un numero: ";
-      std::cin >> numero;
+    const int CANTIDAD = 5;
 
+    int pares[CANTIDAD];  int totalPares = 0;  int numero;
 
-    {if(numero % 2==0){
+    
+    for(int i = 0; i < CANTIDAD; i++) {
+        std::cout << "Escribe un numero: ";  std::cin >> numero;
+
         
-       pares[totalPares] = numero;
-            totalPares++;
-
+        if(numero % 2 == 0) {
+            pares[totalPares] = numero; totalPares++;
+        }
     }
 
-    }
-  
-   for(int i = 0; i < totalPares; i++) {
+    
+    std::cout << "Se guardaron " << totalPares << " numeros pares.\n";
+    std::cout << "Los numeros pares son: ";
+
+    for(int i = 0; i < totalPares; i++) {
         std::cout << pares[i] << " ";
     }
     std::cout << std::endl;
-  
-    std::cout << "Se guardaron " << totalPares << " numeros pares.\n"; std::cout << "Los numeros pares son: ";
 
-
-    //    TODO: lee cada número con leerEntero("Escribe un numero: ")
-    //    TODO: si el número es par, guárdalo en la siguiente posición libre
-    //    ¿Qué variable te dice cuál es la siguiente posición libre?
-
-    // 4. Salida
-    //    TODO: muestra cuántos pares se guardaron
-    //    TODO: recorre el arreglo e imprime cada par
-    //    ¿Hasta qué posición debes llegar?
-
-    // ¿Qué significa return 0;?
+    
     return 0;
-
 }
