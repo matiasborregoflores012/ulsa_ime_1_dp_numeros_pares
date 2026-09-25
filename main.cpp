@@ -21,10 +21,27 @@ int main() {
     // 3. Ciclo: leer CANTIDAD números
 
 
-    for(int i = 0; i < CANTIDAD; i++){if(numero % 2==0)
-        
-        i = 0; i < totalPares;
+    for(int i = 0; i < CANTIDAD; i++)
+    
+     std::cout << "Escribe un numero: ";
+      std::cin >> numero;
 
+
+    {if(numero % 2==0){
+        
+       pares[totalPares] = numero;
+            totalPares++;
+
+    }
+
+    }
+  
+   for(int i = 0; i < totalPares; i++) {
+        std::cout << pares[i] << " ";
+    }
+    std::cout << std::endl;
+  
+    std::cout << "Se guardaron " << totalPares << " numeros pares.\n"; std::cout << "Los numeros pares son: ";
 
 
     //    TODO: lee cada número con leerEntero("Escribe un numero: ")
@@ -38,4 +55,5 @@ int main() {
 
     // ¿Qué significa return 0;?
     return 0;
+
 }
